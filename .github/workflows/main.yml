@@ -34,7 +34,7 @@ jobs:
         run: versionStr=${{ github.ref }};echo -e v${versionStr#*v} > VERSION
 
       - name: Create Release Asset
-        run: tar -cvjSf site.tar.bz2 _site/* VERSION
+        run: tar -cvjSf site.tar.bz2 site/* VERSION
 
       - name: Publish Release
         id: create_release
