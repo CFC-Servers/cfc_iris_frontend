@@ -22,7 +22,7 @@ jobs:
         run: sudo apt install -y ruby-full
 
       - name: Install bundler
-        run: gem install bundler
+        run: sudo gem install bundler
 
       - name: Bundle install
         run: NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle install -j2
